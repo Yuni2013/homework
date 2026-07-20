@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>방학숙제</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 5vw;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: clamp(30px, 8vw, 45px);
+        }
+
+        h3 {
+            font-size: clamp(15px, 4vw, 22px);
+        }
+
+        input {
+            width: 70%;
+            max-width: 350px;
+            height: 45px;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        button {
+            width: 120px;
+            height: 45px;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        #result {
+            font-size: 22px;
+        }
+
+
+        @media(max-width:600px){
+
+            input {
+                width:100%;
+            }
+
+            button {
+                width:100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>방학숙제</h1>
+<h3>올바른 코드를 입력하세요</h3>
+<h3>코드 보기와 AI 사용은 허용됩니다</h3>
+
+<input id="code">
+<button onclick="check()">확인</button>
+
+<p id="result"></p>
+
+
+<script>
+
+function hash32(str) {
+    let hash = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        hash = (hash << 5) - hash + str.charCodeAt(i);
+        hash = hash & 0xffffffff;
+    }
+
+    return hash >>> 0;
+}
+
+
+const answerHash = "9e48a795";
+
+
+function multiHash(text) {
+
+    let result = text;
+
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+    result = hash32(result).toString(16);
+
+    return result;
+}
+
+
+function check() {
+
+    const input = document.getElementById("code").value;
+
+    const inputHash = multiHash(input);
+
+
+    if (inputHash === answerHash) {
+
+        document.getElementById("result").textContent =
+        "정답입니다!";
+
+    } else {
+
+        document.getElementById("result").textContent =
+        "틀렸습니다.";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
